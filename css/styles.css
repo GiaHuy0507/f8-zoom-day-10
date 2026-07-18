@@ -9,7 +9,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 html {
@@ -21,7 +20,12 @@ body {
   font-family: var(--secondary-font);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--heading-font);
 }
 
@@ -36,8 +40,6 @@ button {
   cursor: pointer;
 }
 
-
-
 .header {
   display: flex;
   width: 100%;
@@ -45,7 +47,7 @@ button {
   background: url(../img/bg-contact.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center
+  background-position: center;
 }
 
 .header .inner {
@@ -85,19 +87,20 @@ button {
   letter-spacing: 1.1px;
   padding: 20px;
   cursor: pointer;
-
 }
 
-.menu>li {
+.menu > li {
   position: relative;
 }
 
-.menu>li:hover .sub-menu {
+.menu > li:hover .sub-menu {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
   transform-origin: top;
-  transition: opacity .3s, transform .3s;
+  transition:
+    opacity 0.3s,
+    transform 0.3s;
 }
 
 .menu .sub-menu {
@@ -109,7 +112,10 @@ button {
   opacity: 0;
   visibility: hidden;
   transform: translateY(-15px);
-  transition: opacity .3s, transform .3s, visibility 0s ease-in-out .3s;
+  transition:
+    opacity 0.3s,
+    transform 0.3s,
+    visibility 0s ease-in-out 0.3s;
 }
 
 .sub-menu li:hover {
@@ -136,14 +142,13 @@ button {
 .header__actions {
   display: flex;
   gap: 20px;
-
 }
 
 .header__action-btn {
   font-size: 2rem;
   color: #fff;
   padding: 1px;
-
+  /* cursor: pointer; */
 }
 
 .btn-search {
@@ -155,12 +160,12 @@ button {
 }
 
 .btn-search:hover {
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
   cursor: pointer;
 }
 
 .header__action-btn:hover {
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
   cursor: pointer;
 }
 
@@ -183,7 +188,9 @@ button {
   background-color: #fff;
   opacity: 0;
   visibility: hidden;
-  transition: opacity .3s, visibility .3s ease-in-out .3s;
+  transition:
+    opacity 0.3s,
+    visibility 0.3s ease-in-out 0.3s;
 }
 
 .search-bar input::placeholder {
@@ -196,7 +203,7 @@ button {
   background-color: var(--primary-color);
 }
 
-.btn-search input[type="checkbox"]:checked~.search-bar {
+.btn-search input[type="checkbox"]:checked ~ .search-bar {
   opacity: 1;
   visibility: visible;
 }
@@ -212,7 +219,7 @@ button {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: #FFFF;
+  color: #ffff;
 }
 
 .breadcrum {
@@ -229,7 +236,7 @@ button {
   font-weight: 700;
 }
 
-.breadcrum li+li::before {
+.breadcrum li + li::before {
   content: "/";
   color: rgba(255, 255, 255, 0.8);
   padding: 0 8px;
@@ -256,12 +263,10 @@ main .inner {
   width: 100%;
   height: 100%;
   object-fit: cover;
-
 }
 
 .contact-card {
   flex: 1;
-
 }
 
 .contact-card {
@@ -273,8 +278,6 @@ main .inner {
   width: 100%;
   height: 100%;
   padding: 60px 0 92px 70px;
-
-
 }
 
 .contact-card__title {
@@ -288,18 +291,16 @@ main .inner {
   margin-bottom: 90px;
   padding-bottom: 18px;
   position: relative;
-
 }
 
 .contact-card__title::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100px;
   height: 2px;
   background: #f2b604;
   left: 73px;
   bottom: 0;
-
 }
 
 .contact-card__item {
@@ -316,9 +317,7 @@ main .inner {
 }
 
 .contact-form__group {
-
   width: 100%;
-
 }
 
 .contact-form__input {
@@ -328,10 +327,10 @@ main .inner {
   padding: 0 20px;
   margin-bottom: 30px;
   height: 70px;
-
 }
 
-.contact-form__input:focus, .contact-form__textarea:focus {
+.contact-form__input:focus,
+.contact-form__textarea:focus {
   outline: none;
   border: 1px solid var(--secondary-color);
   transition: border ease-in-out 0.5s;
@@ -357,8 +356,6 @@ textarea {
 .contact-form__row {
   display: flex;
   gap: 20px;
-
-
 }
 
 .contact-form__button {
@@ -370,7 +367,6 @@ textarea {
   text-transform: uppercase;
   background-color: #783df0;
   color: #fff;
-
 }
 
 .contact-form__button:hover {
@@ -380,7 +376,7 @@ textarea {
 
 iframe {
   margin-top: 30px;
-
+  width: 100%;
 }
 
 /* Footer */
@@ -428,7 +424,7 @@ iframe {
   line-height: 1.6;
 }
 
-.footer__description p+p {
+.footer__description p + p {
   margin-top: 10px;
 }
 
@@ -454,7 +450,7 @@ iframe {
   list-style: none;
 }
 
-.footer__item+.footer__item {
+.footer__item + .footer__item {
   margin-top: 15px;
 }
 
@@ -462,7 +458,7 @@ iframe {
   color: #a0a0a0;
   text-decoration: none;
   font-size: 1.4rem;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .footer__link:hover {
@@ -500,7 +496,7 @@ iframe {
   color: #fff;
   letter-spacing: 1.5px;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .footer__button:hover {
