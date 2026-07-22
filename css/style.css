@@ -161,6 +161,13 @@ button {
   position: relative;
 }
 
+.btn-search label {
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
 .search-bar__input {
   outline: none;
   border: 1px solid #e0dede;
